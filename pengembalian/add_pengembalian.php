@@ -51,12 +51,12 @@
             </div>
             <div class="form-group">
                 <label>Buku di pinjam pada tanggal</label>
-                <input type="text" name="tgl_pinjam" class="form-control sr-only" value="<?php echo date('Y-m-d', $_pinjam); ?>" hidden>
+                <input type="text" name="tgl_pinjam" class="form-control" value="<?php echo date('Y-m-d', $_pinjam); ?>" hidden>
                 <input type="text" name="tgl_pinjam_muncul" class="form-control" value="<?php echo date('d M Y', $_pinjam) ;?>" disabled>
             </div>
             <div class="form-group">
                 <label>Harus dikembalikan sebelum tanggal</label>
-                <input type="text" name="tgl_kembali" class="form-control sr-only" value="<?php echo date('Y-m-d', $_kembali); ?>" hidden>
+                <input type="text" name="tgl_kembali" class="form-control" value="<?php echo date('Y-m-d', $_kembali); ?>" hidden>
                 <input type="text" name="tgl_kembali_muncul" class="form-control" value="<?php echo date('d M Y', $_kembali); ?>" disabled>
             </div>
             <input type="submit" name="submit" value="Submit" class="btn btn-primary">
