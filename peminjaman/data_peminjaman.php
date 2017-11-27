@@ -7,7 +7,7 @@
     $query = 'SELECT * ,
 	            (select nama_siswa from siswa where nis = peminjaman.nis) as nama_siswa,
                 (select judul from buku where id_buku = peminjaman.id_buku) as judul
-                FROM peminjaman ORDER BY tgl_pinjam ASC;';
+                FROM peminjaman ORDER BY tgl_pinjam DESC;';
     $no=1;
     //Get Result
     $result = mysqli_query($conn, $query);
@@ -60,6 +60,10 @@
         
     
             <?php foreach($datas as $data) : ?>
+            <?php 
+                $_pinjam = strtotime($data['tgl_pinjam']);
+                $_kembali = strtotime($data['tgl_kembali']);
+            ?>
             <tbody>
                 <tr class="table-success">
                 <td><?php echo $no; ?></td>
@@ -68,8 +72,8 @@
                 <td><?php echo $data['nama_siswa']; ?></td>
                 <td><?php echo $data['id_buku']; ?></td>
                 <td><?php echo $data['judul']; ?></td>
-                <td><?php echo $data['tgl_pinjam']; ?></td>
-                <td><?php echo $data['tgl_kembali']; ?></td>
+                <td><?php echo date('d M Y', $_pinjam); ?></td>
+                <td><?php echo date('d M Y', $_kembali); ?></td>
                 <td>
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <a href="<?php echo ROOT_URL; ?>peminjaman/edit_peminjaman.php?id_pinjam=<?php echo $data['id_pinjam']; ?>" class="btn btn-primary btn-sm " style="margin: 3px 0;">Edit</a>
