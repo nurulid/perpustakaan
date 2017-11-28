@@ -42,7 +42,7 @@
 <?php include('../inc/header.php'); ?>
     <div class="container">
         <h1  style="margin: 10px 10px 15px; display: inline-block;">Data <span class="text-primary">Peminjaman Buku</span> Perpustakaan SD ABC</h1>
-        <a href="add_peminjaman.php" class="btn btn-outline-primary" style="margin-top: 15px; float: right;">Tambah</a>
+        <a href="add_peminjaman.php" class="btn btn-danger" style="margin-top: 15px; float: right;">Tambah</a>
         <table class="table table-striped table-hover table-bordered">
         <thead>
             <tr>

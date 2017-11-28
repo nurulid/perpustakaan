@@ -27,3 +27,4 @@ function isi_judul(){
         $('#judul').val(obj.judul);
     });
 }
+

@@ -7,7 +7,7 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1 class="display-3">Selamat Datang di Perpustakaan SD ABC</h1>
+        <h1>Selamat Datang di Perpustakaan SD ABC</h1>
     </div>
 </div>
 

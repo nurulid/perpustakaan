@@ -22,7 +22,7 @@
     }
     
     $_pinjam = strtotime('today');
-    $_kembali = strtotime('+8 Days');
+    $_kembali = strtotime('+7 Days');
 ?>
 
 <?php include('../inc/header.php'); ?>
