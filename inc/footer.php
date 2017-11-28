@@ -4,7 +4,6 @@
 <script src="<?php echo ROOT_URL; ?>js/jquery-1.12.4.min.js"></script>
 <script src="<?php echo ROOT_URL; ?>js/main.js"></script>
 <script src="<?php echo ROOT_URL; ?>js/pinjam.js"></script>
-<script src="<?php echo ROOT_URL; ?>js/hitung.js"></script>
 
 <!-- <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
 <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
