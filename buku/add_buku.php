@@ -28,10 +28,10 @@
     <div class="container">
         <h1 style="margin: 10px 10px 15px;">Isi Data Lengkap Buku</h1>
         <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label>ID Buku</label>
                 <input type="text" name="id" class="form-control">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label>Judul</label>
                 <input type="text" name="judul" class="form-control">
