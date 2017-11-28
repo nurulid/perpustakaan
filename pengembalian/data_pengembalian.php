@@ -27,7 +27,7 @@
         //Get from data
         $delete_id = mysqli_real_escape_string($conn, $_POST['delete_id']);
 
-        $query = "DELETE FROM pengembalian WHERE id_pinjam = {$delete_id}";
+        $query = "DELETE FROM pengembalian WHERE id_kembali = {$delete_id}";
         //die($queryy); //untuk nge-check
         if(mysqli_query($conn, $query)){
             header('Location: '.ROOT_URL.'pengembalian/data_pengembalian.php');
@@ -78,9 +78,9 @@
                 <td><?php echo $data['denda']; ?></td>
                 <td>
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                    <a href="<?php echo ROOT_URL; ?>pengembalian/edit_pengembalian.php?id_pinjam=<?php echo $data['id_pinjam']; ?>" class="btn btn-primary btn-sm " style="margin: 3px 0;">Edit</a>
-                    <input type="hidden" name="delete_id" value="<?php echo $data['id_pinjam']; ?>">
-                    <input type="submit" name="delete" value="Delete" class="btn btn-outline-secondary btn-sm" Onclick="return confirm('Apakah anda yakin untuk menghapus data peminjaman dengan ID <?php echo $data['id_pinjam']?>?')" style="margin: 3px 0;">
+                    <a href="<?php echo ROOT_URL; ?>pengembalian/edit_pengembalian.php?id_pinjam=<?php echo $data['id_kembali']; ?>" class="btn btn-primary btn-sm " style="margin: 3px 0;">Edit</a>
+                    <input type="hidden" name="delete_id" value="<?php echo $data['id_kembali']; ?>">
+                    <input type="submit" name="delete" value="Delete" class="btn btn-outline-secondary btn-sm" Onclick="return confirm('Apakah anda yakin untuk menghapus data peminjaman dengan ID <?php echo $data['id_kembali']?>?')" style="margin: 3px 0;">
                 </form>
                 </td>
                 </tr>

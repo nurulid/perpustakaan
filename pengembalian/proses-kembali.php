@@ -14,7 +14,9 @@ include_once('../config/db.php');
              'id_buku'    =>  $peminjaman['id_buku'],
              'judul'      =>  $peminjaman['judul'],
              'pinjam'     =>  $peminjaman['tgl_pinjam'],
+             'pinjam_muncul'     =>  date('d M Y', strtotime($peminjaman['tgl_pinjam'])),
              'kembali'     =>  $peminjaman['tgl_kembali'],
+             'kembali_muncul'     => date('d M Y', strtotime($peminjaman['tgl_kembali'])),
              'kembali_str' =>  strtotime($peminjaman['tgl_kembali']));
   echo json_encode($data);
   //die(data)
