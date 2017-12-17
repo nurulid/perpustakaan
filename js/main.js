@@ -3,6 +3,11 @@ $(".nav li").on("click", function(){
     $(this).addClass("active");
 });
 
+$(".dropdown-menu li").on("click", function(){
+    $(".dropdown-menu li").removeClass("active");
+    $(this).addClass("active");
+});
+
 
 function isi_nama(){
     var nis = $("#nis").val();
